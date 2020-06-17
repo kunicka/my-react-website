@@ -1,0 +1,90 @@
+$primary-font: 'Nunito', sans-serif;
+$header-font: 'Domine', serif;
+$primary-color: black;
+
+
+body {
+  font: 100%, $primary-font;
+  background-image: url('./img/tlo.png');
+}
+
+%middle-location {
+  display:flex; 
+  justify-content: space-around;
+  text-align: center;
+}
+
+%header-grey-box {
+  border-radius: 20px;
+  background-color: rgb(128, 128, 128);
+  opacity: 0.6;
+  padding: 20px;
+  
+}
+
+%div-container {
+  border-radius: 20px;
+  border: 2px, solid, #808080;
+  background-color: white;
+  width: 40em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
+%nav-style{
+    display:inline-block;
+    justify-content:space-around;
+    align-items:center;
+    min-height: 20vh;
+    width: 30vw;
+    background-color: lightBlue;
+    
+}
+
+.button-inside-task-box{
+  margin-bottom: 10px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.middle-div
+ {
+  @extend %middle-location;
+  @extend %header-grey-box;
+  width: 10em;
+}
+
+
+
+
+.div-container {
+  @extend %div-container;
+  @extend %middle-location;
+}
+
+nav {
+    @extend %nav-style
+}
+
+.header-component{
+  @extend %middle-location;
+  @extend %header-grey-box;
+}
+.shop-page, .about-page {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.nav-component, .main-container{
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+

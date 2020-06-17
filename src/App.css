@@ -1,38 +1,71 @@
-.App {
+body {
+  font: 100%, "Nunito", sans-serif;
+  background-image: url("./img/tlo.png");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.middle-div, .div-container, .header-component {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+.middle-div, .header-component {
+  border-radius: 20px;
+  background-color: gray;
+  opacity: 0.6;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-container {
+  border-radius: 20px;
+  border: 2px, solid, #808080;
+  background-color: white;
+  width: 40em;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav {
+  display: inline-block;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 20vh;
+  width: 30vw;
+  background-color: lightBlue;
 }
 
-.App-link {
-  color: #61dafb;
+.button-inside-task-box {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+.middle-div {
+  width: 10em;
+}
+
+.shop-page, .about-page {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.nav-component, .main-container {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
 }
