@@ -13,6 +13,8 @@ export const NavLinks = () => {
                 <ul className="nav-links">
                    <A href="/"><li>Home</li></A> 
                    <A href="/about"><li>About</li></A> 
+                   <A href="/about"><li>About</li></A> 
+                   <A href="/about"><li>About</li></A> 
                    <li onClick={toggleLink}>Shop</li>
                    {linkVisible && <Shop/>}
                    {/* <A href="/shop"><li>Shop</li></A> 

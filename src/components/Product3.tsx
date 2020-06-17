@@ -1,9 +1,10 @@
 import React from 'react'
+import { Page } from './Page'
 
 export const Product3 = () => {
     return (
         <div>
-            <h3>Product3</h3>
+             <Page title="Product3"/>
         </div>
     )
 }
