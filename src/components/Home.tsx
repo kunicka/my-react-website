@@ -1,14 +1,14 @@
 import React from 'react'
 import {A} from 'hookrouter'
+import { Page } from './Page'
 
 export const Home = () => {
-    return (
-        <div>
-            <h2>Welcome to the home page of this page.</h2>
-            <div className="middle-div">
-                
-            <A href='./Product1'>Click to see our bestseller!
-                </A></div>
-        </div>
-    )
-}
+        const bestsellerLink = <A href='./Product1'>Click to see our bestseller!</A>
+        return (
+            <div>
+                <Page title="Welcome to the home page of this page." children={bestsellerLink}/>
+            </div>
+        )
+    }
+    
+

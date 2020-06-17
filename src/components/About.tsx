@@ -4,10 +4,10 @@ import { Page } from './Page'
 
   
 export const About = () => {
-    const bestsellerLink = <A href="./">If you know enough about us, come back to the main page and start exploring our website</A>
+    const homeLink = <A href="./">If you know enough about us, come back to the main page and start exploring our website</A>
     return (
         <div>
-            <Page title="About Page" children={bestsellerLink}/>
+            <Page title="About Page" children={homeLink}/>
         </div>
     )
 }
