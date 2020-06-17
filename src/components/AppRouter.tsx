@@ -24,10 +24,9 @@ export const AppRouter=()=>{
   return (
     <div>
       <Header />
-      <Nav />
       <div className="main-container">
-        {match}
-       
+      <Nav />
+      {match}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Page } from './Page'
 
 export const Product2 = () => {
     return (
-        <div>
+        <div className="page-container">
              <Page title="Product2"/>
         </div>
     )

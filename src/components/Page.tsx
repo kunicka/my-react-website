@@ -7,9 +7,9 @@ export interface IPageProps {
 
 export const Page:React.FC<IPageProps>  = ({title, children}) => {
     return (
-        <div>
+        <div className="inside-page-container">
             <h2>{title}</h2>
-            <div className="middle-div">
+            <div className="inside-page-container">
                 {children}
             </div>
             

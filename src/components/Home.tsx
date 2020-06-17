@@ -5,7 +5,7 @@ import { Page } from './Page'
 export const Home = () => {
         const bestsellerLink = <A href='./Product1'>Click to see our bestseller!</A>
         return (
-            <div>
+            <div className="page-container">
                 <Page title="Welcome to the home page of this page." children={bestsellerLink}/>
             </div>
         )

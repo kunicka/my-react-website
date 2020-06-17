@@ -9,8 +9,8 @@ export const Nav = () => {
         setNavVisible(!navVisible)
     }
     return (
-        <div className="nav-component">
-            <h3 onClick={toggleNav}>Click to see the Nav Page</h3>
+        <div className="nav-container">
+            <h3 onClick={toggleNav}>Menu</h3>
             {navVisible && <NavLinks/>}
             
         </div>
