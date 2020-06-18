@@ -57,8 +57,8 @@ h5 {
 
 button{
   display:block;
-  color: white;
-  background-color:black;
+  // color: white;
+  // background-color:rgb(58, 58, 58);
   min-width: 80px;
   margin: 5px 2.5px 5px 2.5px;
   font-family: $primary-font;
@@ -68,3 +68,14 @@ button{
   padding-left: 40px;
   opacity:0.8;
 }
+
+
+.blackColor{
+  background-color: black;
+  color:white
+}
+
+.redColor{
+  background-color: red;
+}
+

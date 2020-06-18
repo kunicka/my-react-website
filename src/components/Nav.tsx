@@ -12,7 +12,6 @@ export const Nav = () => {
         <div className="nav-container">
             <button className="navButton" onClick={toggleNav}>Menu</button>
             {navVisible && <NavLinks/>}
-            
         </div>
     )
 }

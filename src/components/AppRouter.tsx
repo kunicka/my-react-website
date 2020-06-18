@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {About} from "./About";
 import {Nav} from "./Nav";
 import {Header} from "./Header";
@@ -9,28 +9,27 @@ import {Product3} from "./Product3"
 import {useRoutes} from "hookrouter";
 import {Home} from './Home'
 
-
-const routes = {
-  '/':() =><Home/>,
-  '/about': () =><About/>,
-  '/shop': () =><Shop/>,
-  '/product1': () => <Product1/>,
-  '/product2': () => <Product2/>,
-  '/product3': () => <Product3/>,
-}
-
 export const AppRouter=()=>{
-  // const [inProp, setInProp] = useState(false);
-  const match = useRoutes(routes);
+
+  const routes = {
+    '/':() =><Home/>,
+    '/about': () =><About/>,
+    '/shop': () =><Shop/>,
+    '/product1': () => <Product1/>,
+    '/product2': () => <Product2/>,
+    '/product3': () => <Product3/>,
+  }
+
+  const routeResult = useRoutes(routes);
+
   return (
     <div>
       <Header />
       <div className="main-container">
-      {/* <Transition className="enter-active"> */}
-      <Nav />
-      {match}
-      {/* </Transition> */}
+      <Nav/>
+      {routeResult}
       </div>
-    </div>
+      </div>
+    
   );
 };
