@@ -1,6 +1,6 @@
 import React from 'react'
 import {A} from "hookrouter"
-import { Page } from './Page'
+import {Page} from './Page'
 
   
 export const About = () => {

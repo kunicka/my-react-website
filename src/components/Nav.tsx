@@ -10,7 +10,7 @@ export const Nav = () => {
     }
     return (
         <div className="nav-container">
-            <h3 onClick={toggleNav}>Menu</h3>
+            <button className="navButton" onClick={toggleNav}>Menu</button>
             {navVisible && <NavLinks/>}
             
         </div>
