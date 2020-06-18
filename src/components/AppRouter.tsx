@@ -6,9 +6,9 @@ import {Shop} from "./Shop";
 import {Product1} from "./Product1"
 import {Product2} from "./Product2"
 import {Product3} from "./Product3"
-
-import { useRoutes } from "hookrouter";
+import {useRoutes} from "hookrouter";
 import {Home} from './Home'
+
 
 const routes = {
   '/':() =><Home/>,
@@ -20,13 +20,16 @@ const routes = {
 }
 
 export const AppRouter=()=>{
+  // const [inProp, setInProp] = useState(false);
   const match = useRoutes(routes);
   return (
     <div>
       <Header />
       <div className="main-container">
+      {/* <Transition className="enter-active"> */}
       <Nav />
       {match}
+      {/* </Transition> */}
       </div>
     </div>
   );

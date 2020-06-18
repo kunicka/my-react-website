@@ -7,18 +7,18 @@ export const NavLinks = () => {
 
     const toggleLink=()=>{
         setLinkVisible(!linkVisible)}
+        
     return (
         
-            <nav>
-                <ul className="nav-links">
-                   <A href="/"><li>Home</li></A> 
-                   <A href="/about"><li>About</li></A> 
-                   <A href="/about"><li>About</li></A> 
-                   <A href="/about"><li>About</li></A> 
-                   <li onClick={toggleLink}>Shop</li>
+            <nav className="nav-links">
+                
+                   <A href="/"><button>Home</button></A> 
+                   <A href="/about"><button>About</button></A> 
+                   <A href="/about"><button>About</button></A> 
+                   <A href="/about"><button>About</button></A> 
+                   <button onClick={toggleLink}>Shop</button>
                    {linkVisible && <Shop/>}
-                    
-                </ul>
+               
             </nav>
         
     )
