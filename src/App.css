@@ -70,3 +70,7 @@ button {
 .redColor {
   background-color: red;
 }
+
+.product-image {
+  width: 50px;
+}

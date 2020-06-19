@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 import {A} from "hookrouter"
 
   
+  
 export const Shop = () => {
+
     const [openedP1, setOpenedP1] = useState(false);
     const [openedP2, setOpenedP2] = useState(false);
     const [openedP3, setOpenedP3] = useState(false);
@@ -25,8 +27,8 @@ export const Shop = () => {
 
     return (
         <div className="product-buttons">
-            <A href="/product1"><button
-            onClick={p1Button} className={openedP1 ? 'redColor' : 'blackColor'}>Product1</button></A>
+            <span style={{color:"black"}}><A href="/product1"><button
+            onClick={p1Button} className={openedP1 ? 'redColor' : 'blackColor'}>Product1</button></A></span>
             <A href="/product2"><button
             onClick={p2Button} className={openedP2 ? 'redColor' : 'blackColor'}>Product2</button></A>
             <A href="/product3"><button

@@ -9,6 +9,7 @@ export const Product:React.FC<IProductProps> = ({title}) => {
         <div className="inside-page-container">
             <h2>{title}</h2>
             <p>{title}</p>
+            
         </div>
     )
 }

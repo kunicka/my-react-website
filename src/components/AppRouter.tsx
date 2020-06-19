@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {About} from "./About";
 import {Nav} from "./Nav";
 import {Header} from "./Header";
@@ -15,9 +15,9 @@ export const AppRouter=()=>{
     '/':() =><Home/>,
     '/about': () =><About/>,
     '/shop': () =><Shop/>,
-    '/product1': () => <Product1/>,
-    '/product2': () => <Product2/>,
-    '/product3': () => <Product3/>,
+    '/product1': () =><Product1/>,
+    '/product2': () =><Product2/>,
+    '/product3': () =><Product3/>,
   }
 
   const routeResult = useRoutes(routes);
